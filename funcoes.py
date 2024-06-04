@@ -1,7 +1,19 @@
-def ExibirMensagem(nome):
-    print(f'Seja bem vindo {nome}')
+def ExibirMensagem(nome, mensagem="Seja bem vindo"):
+    print(f'{mensagem} {nome}')
     return f'Usuário logado: {nome}'
 
 nome_usuario = input(' Digite o nome de usuário: ')
-usuario = ExibirMensagem(nome_usuario)
+msg = input(" Digite uma mensagem: ")
+usuario = ExibirMensagem(nome_usuario, msg)
+print(usuario)
+
+print(50 * "_")
+
+def ExibirMensagem(nome, mensagem="Seja bem vindo"):
+    print(f'{mensagem} {nome}')
+    return f'Usuário logado: {nome}'
+
+nome_usuario = input(' Digite o nome de usuário: ')
+msg = input(" Digite uma mensagem: ")
+usuario = ExibirMensagem(nome_usuario, msg)
 print(usuario)
